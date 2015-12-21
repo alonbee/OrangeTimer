@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/r_background">"
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+        android:background="@drawable/r_title"
+        />            //biaoti
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="300dp"
+        android:layout_height="430dp"
+        android:background="@drawable/r_homepage">
+        <ListView 
+			android:layout_width="280dp"
+			android:layout_height="350dp"
+			android:id="@+id/r_lv" 
+			android:layout_marginLeft="10dp"           
+            >
+        </ListView>                       //zhongjianshuju
+        
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/r_delete"
+            android:background="@drawable/r_delete"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="360dp"
+            />       //shanchu
+    </RelativeLayout>
+</RelativeLayout>

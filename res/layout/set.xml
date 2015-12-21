@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/settingnew">
+	<TextView
+	    android:id="@+id/s_t"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_width="90dp"
+	    android:layout_height="90dp"
+	    />        //mingzi,tupian
+	    <TextView
+	        android:layout_width="50dp"
+	        android:layout_height="25dp"
+	        android:id="@+id/s_rate"
+	        android:layout_marginLeft="260dp"
+	        android:layout_marginTop="75dp"
+	        android:background="@drawable/s_rate"
+	        />                   //dengji
+	        <RelativeLayout
+	            android:id="@+id/s_rl"
+	            android:layout_width="310dp"
+	            android:layout_height="220dp"
+	            android:layout_marginTop="110dp"
+	            android:layout_marginLeft="5dp"
+	            >         
+
+	                <Button
+	                    android:id="@+id/s_sdaycount"
+	                    android:layout_width="70dp"
+	                    android:layout_height="70dp"
+	                    android:layout_marginTop="40dp"
+	                    android:layout_marginLeft="70dp"
+	                    android:background="@drawable/useddays" >
+</Button>      //  jishiwancheng
+
+	                <Button
+	                    android:id="@+id/s_gdaycount"
+	                    android:layout_width="70dp"
+	                    android:layout_height="70dp"
+	                    android:layout_marginTop="40dp"
+	                    android:layout_marginLeft="170dp"
+	                    android:background="@drawable/tireddays" >
+</Button>        //yanchiwancheng
+	                         
+	        </RelativeLayout>
+	        <RelativeLayout 
+				android:layout_width="295dp"
+				android:layout_marginLeft="13dp"
+				android:layout_height="200dp"
+				android:layout_below="@id/s_rl"
+				 >
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:id="@+id/s_goodmorning"
+	                    android:background="@drawable/s_goodmorning"/>     //goodmorning
+
+	                <Button
+	                    android:id="@+id/s_unsure"
+	                    android:layout_width="80dp"
+	                    android:layout_height="30dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/s_sure" />
+
+        //quxiao 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:id="@+id/s_pre"
+	                    android:layout_marginTop="40dp"
+	                    android:background="@drawable/s_pre"/>     //yuxianjihua
+
+	                <Button
+	                    android:id="@+id/s_sure"
+	                    android:layout_width="80dp"
+	                    android:layout_height="30dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginTop="45dp"
+	                    android:background="@drawable/s_unsure" />
+        //queding  
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:id="@+id/s_owndesign"
+	                    android:layout_marginTop="80dp"
+	                    android:background="@drawable/s_owndesign"/> 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:id="@+id/s_aboutus"
+	                    android:layout_marginTop="120dp"
+	                    android:background="@drawable/s_aboutus"/> 
+	        </RelativeLayout>
+
+</RelativeLayout>

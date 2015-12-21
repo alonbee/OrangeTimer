@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.okaybegin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.VIBRATE" />  
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>  
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <application 
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="OrangeTimer">
+        <activity
+            android:name="com.example.okaybegin.MainActivity"
+             android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.okaybegin.NewActivity"
+             android:theme="@android:style/Theme.NoTitleBar">
+            </activity>
+            <activity
+                android:name="com.example.okaybegin.RecycleActivity"
+                android:theme="@android:style/Theme.NoTitleBar">
+                
+            </activity>
+            <activity
+                android:name="com.example.okaybegin.SetActivity"
+                android:theme="@android:style/Theme.NoTitleBar">
+            </activity>
+           <receiver android:name=".OneAlarm" android:process=":remote"></receiver> 
+        <activity android:name=".AlarmAlert"
+              android:label="@string/app_name">
+        </activity>
+        
+            
+    </application>
+    
+</manifest>

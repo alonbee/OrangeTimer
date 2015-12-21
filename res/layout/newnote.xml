@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/n_background" >
+	<LinearLayout
+	    android:layout_width="300dp" 
+	    android:id="@+id/lay"
+        android:layout_height="330dp"
+        android:background="@drawable/n_paper"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp">
+	    <EditText
+	        android:layout_marginTop="50dp"
+	        android:layout_marginLeft="10dp"
+	    android:layout_width="287dp"
+	    android:layout_height="190dp"
+        android:id="@+id/n_write"
+        android:gravity="top"
+        />        //zhongjianxingzi
+	</LinearLayout>
+    
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/lay"
+            android:background="@drawable/n_yesmind"
+            android:id="@+id/remind"
+            />         //shifouxuyaotixing
+
+        <Button
+            android:id="@+id/n_setalert"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/remind"
+            android:layout_alignBottom="@+id/remind"
+            android:layout_alignRight="@+id/lay"
+            android:background="@drawable/n_no" />
+               //tixing anniu"
+        
+            <Button
+                android:id="@+id/n_monthday"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_below="@id/remind"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/n_monthday"
+                android:text="1-1" />
+      //yue ri
+
+                <Button
+                    android:id="@+id/n_hour"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_below="@id/remind"
+                    android:layout_toRightOf="@id/n_monthday"
+                    android:background="@drawable/n_hour"
+                    android:text="13" />
+
+     //xiaoshi
+
+                <Button
+                    android:id="@+id/n_minute"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_below="@id/remind"
+                    android:layout_toRightOf="@id/n_hour"
+                    android:background="@drawable/n_minute"
+                    android:text="0" />
+
+        //fenzhong
+                
+                <Button
+                    android:id="@+id/n_startbutton"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_alignRight="@+id/n_setalert"
+                    android:layout_below="@+id/remind"
+                    android:background="@drawable/n_startbutton" />
+
+       //kaishi
+
+    
+
+</RelativeLayout>
